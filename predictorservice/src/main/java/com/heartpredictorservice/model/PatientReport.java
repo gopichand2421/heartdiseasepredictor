@@ -2,6 +2,7 @@ package com.heartpredictorservice.model;
 
 public class PatientReport {
 
+    private Integer id;
     //age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal,target
 
     /**
@@ -10,6 +11,7 @@ public class PatientReport {
      */
     private Integer age;
 
+    private String tile;
     /**
      * <h5>Gender</h5>
      * <p>Gender of the patient(0 = male, 1=Female)</p>
@@ -22,12 +24,12 @@ public class PatientReport {
      * 2: Non-anginal pain</br>
      * 3: Asymptomatic
      */
-    private Integer cp;
+    private Integer chestpain;
 
     /**
      * Resting Blood pressure in mm Hg
      */
-    private Integer trestbps;
+    private Integer trestbp;
 
     /**
      * <h5>Serum cholesterol in mg/dl</h5>
@@ -100,20 +102,20 @@ public class PatientReport {
         this.gender = gender;
     }
 
-    public Integer getCp() {
-        return cp;
+    public Integer getChestpain() {
+        return chestpain;
     }
 
-    public void setCp(Integer cp) {
-        this.cp = cp;
+    public void setChestpain(Integer chestpain) {
+        this.chestpain = chestpain;
     }
 
-    public Integer getTrestbps() {
-        return trestbps;
+    public Integer getTrestbp() {
+        return trestbp;
     }
 
-    public void setTrestbps(Integer trestbps) {
-        this.trestbps = trestbps;
+    public void setTrestbp(Integer trestbp) {
+        this.trestbp = trestbp;
     }
 
     public Integer getChol() {

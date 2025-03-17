@@ -70,7 +70,7 @@ public class PreditctorService {
             int fbs = patientReport.getFbs()?1:0;
             int exang = patientReport.getExang() ? 1: 0;
             return new double[]{patientReport.getAge(), gen,
-                    patientReport.getCp(),patientReport.getTrestbps(), patientReport.getChol(),
+                    patientReport.getChestpain(),patientReport.getTrestbp(), patientReport.getChol(),
             fbs,patientReport.getRestecg(),patientReport.getThalach(),exang,patientReport.getOldpeak(),
             patientReport.getSloap(), patientReport.getCa(),patientReport.getThal()};
         }
